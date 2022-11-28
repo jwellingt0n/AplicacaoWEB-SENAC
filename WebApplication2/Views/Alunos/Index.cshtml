@@ -1,4 +1,8 @@
-﻿@if (TempData["MensagemSucesso"] != null)
+﻿@{
+    ViewData["Title"] = "Alunos";
+}
+
+@if (TempData["MensagemSucesso"] != null)
 {
     <div class="alert alert-success col-4">
         @TempData["MensagemSucesso"]

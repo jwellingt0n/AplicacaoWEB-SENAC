@@ -1,4 +1,8 @@
-﻿@model AlunoModel
+﻿@{
+    ViewData["Title"] = "Alunos";
+}
+
+@model AlunoModel
 <form asp-controller="Alunos" asp-action="InserirAluno" method="post">
     <div class="mb-3" style="max-width: 500px;">
         <label for="exampleFormControlInput1" class="form-label">Nome Completo *</label>
