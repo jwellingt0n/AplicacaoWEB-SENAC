@@ -1,0 +1,28 @@
+﻿@model AlunoModel
+<form asp-controller="Alunos" asp-action="AtualizarAluno" method="post">
+    <div class="mb-3" style="max-width: 500px;">
+        <label for="exampleFormControlInput1" class="form-label">Nome Completo *</label>
+        <input type="text" required asp-for="Nome" class="form-control" id="exampleFormControlInput1" placeholder="Nome Sobrenome...">
+    </div>
+    <div class="mb-3" style="max-width: 100px;">
+        <label for="exampleFormControlInput1" class="form-label">Idade *</label>
+        <input type="text" required asp-for="Idade" class="form-control" id="exampleFormControlInput1">
+    </div>
+    <div class="mb-3" style="max-width: 300px;">
+        <label for="exampleFormControlInput1" class="form-label">Contato *</label>
+        <input type="text" required asp-for="Contato" class="form-control" id="exampleFormControlInput1" placeholder="(00) 99999-9999">
+    </div>
+    <div class="mb-3" style="max-width: 300px;">
+        <label for="exampleFormControlInput1" class="form-label">Email *</label>
+        <input type="text" required asp-for="Email" class="form-control" id="exampleFormControlInput1">
+    </div>
+    <div class="mb-3" style="max-width: 300px;">
+        <label for="exampleFormControlInput1" class="form-label">Cep *</label>
+        <input type="text" required asp-for="Cep" class="form-control" id="exampleFormControlInput1" placeholder="00000-00">
+    </div>
+    <input type="hidden" asp-for="Id" />
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <button class="btn btn-primary" type="submit">Editar</button>
+        <a asp-controller="Alunos" asp-action="Index" type="button" style="margin: 0 50px;" class="btn btn-info">Voltar</a>
+    </div>
+</form>
